@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="墨衡是一套本地运行的智能题库、组卷、试卷分析与讲义生成系统。" />
+    <meta name="theme-color" content="#11182f" />
+    <title>墨衡 · 本地智能题库系统</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="page-glow page-glow--one"></div>
+    <div class="page-glow page-glow--two"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="墨衡首页">
+        <span class="brand-mark">墨</span>
+        <span><b>墨衡</b><small>INTELLIGENT BANK</small></span>
+      </a>
+      <nav aria-label="主导航">
+        <a href="#capabilities">核心能力</a>
+        <a href="#workflow">工作闭环</a>
+        <a href="#local-first">本地优先</a>
+      </nav>
+      <a class="header-cta" href="https://github.com/Lucian668" target="_blank" rel="noreferrer">联系维护者</a>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <div class="version-pill"><span></span> v1.0.0 已发布</div>
+          <h1>让每一道题，<br /><em>沉淀为可复用的知识。</em></h1>
+          <p class="hero-lead">从 OCR 录入、知识图谱与 AI 解析，到智能组卷、试卷分析和讲义生成。墨衡把教学内容生产的完整流程收进一个本地工作空间。</p>
+          <div class="hero-actions">
+            <a class="button button--primary" href="#capabilities">浏览核心能力 <span>→</span></a>
+            <a class="button button--ghost" href="#local-first">了解本地架构</a>
+          </div>
+          <div class="hero-metrics" aria-label="产品能力概览">
+            <div><strong>17</strong><span>门课程知识体系</span></div>
+            <div><strong>4 级</strong><span>学科知识目录</span></div>
+            <div><strong>3 种</strong><span>AI 对话模式</span></div>
+          </div>
+        </div>
+
+        <div class="product-window" aria-label="墨衡界面概念预览">
+          <div class="window-topbar"><i></i><i></i><i></i><span>墨衡 · 工作台</span></div>
+          <div class="window-body">
+            <aside>
+              <div class="mini-logo">墨</div>
+              <span class="nav-dot active"></span><span class="nav-dot"></span><span class="nav-dot"></span>
+              <span class="nav-dot"></span><span class="nav-dot"></span><span class="nav-dot"></span>
+            </aside>
+            <div class="dashboard">
+              <div class="dashboard-head"><div><small>WORKSPACE</small><h3>早上好，开始今天的题库工作</h3></div><span class="status">● 本地服务正常</span></div>
+              <div class="stat-grid">
+                <article><span>题库总量</span><strong>1,286</strong><small>覆盖 17 门课程</small></article>
+                <article><span>解析完成率</span><strong>92%</strong><small>今日新增 18 题</small></article>
+                <article><span>试题篮</span><strong>36</strong><small>已按题型分区</small></article>
+              </div>
+              <div class="workspace-grid">
+                <section class="subject-card"><header><span>学科矩阵</span><b>全部课程</b></header><div class="subject-list"><i class="violet"></i><span>数学分析</span><b>198</b><i class="cyan"></i><span>高等代数</span><b>146</b><i class="green"></i><span>概率论</span><b>121</b><i class="amber"></i><span>人工智能</span><b>84</b></div></section>
+                <section class="chart-card"><header><span>知识覆盖</span><b>本周</b></header><div class="bars"><i style="--h: 44%"></i><i style="--h: 68%"></i><i style="--h: 52%"></i><i style="--h: 86%"></i><i style="--h: 64%"></i><i style="--h: 94%"></i><i style="--h: 78%"></i></div></section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="capabilities">
+        <div class="section-heading"><span>COMPLETE TOOLCHAIN</span><h2>一个系统，连接完整教学链路</h2><p>围绕题目、知识和试卷建立统一的数据关系，让录入的内容持续产生价值。</p></div>
+        <div class="feature-grid">
+          <article class="feature-card feature-card--violet"><div class="feature-icon">⌁</div><span>QUESTION BANK</span><h3>结构化题库</h3><p>按课程、章节、知识点和考点组织题目，支持多维筛选、12 位 ID、LaTeX、代码、表格与配图。</p></article>
+          <article class="feature-card feature-card--cyan"><div class="feature-icon">⌗</div><span>KNOWLEDGE BASE</span><h3>知识库与图谱</h3><p>构建知识点与考点的双向关系，连接题目与本地 Obsidian，让教学知识可浏览、可维护、可追溯。</p></article>
+          <article class="feature-card feature-card--green"><div class="feature-icon">✦</div><span>AI STUDIO</span><h3>AI 解析与命制</h3><p>提供试题解析、试题命制和自由对话，生成规范答案、详细解析、本质点睛与关联元数据。</p></article>
+          <article class="feature-card feature-card--amber"><div class="feature-icon">▱</div><span>SMART CAPTURE</span><h3>智能识别与切题</h3><p>支持截图粘贴、PDF 整卷切题、公式转 LaTeX、相似题检索和 AI 视觉 OCR 多接口切换。</p></article>
+          <article class="feature-card feature-card--rose"><div class="feature-icon">▤</div><span>PAPER STUDIO</span><h3>智能组卷与分析</h3><p>试题篮、约束组卷和平行组卷协同工作，输出专业 PDF、TeX 与多维命题细目表。</p></article>
+          <article class="feature-card feature-card--blue"><div class="feature-icon">▥</div><span>HANDOUT BUILDER</span><h3>讲义编排</h3><p>组合知识讲解、定义、定理、例题与练习，逐题控制答案解析并生成可继续编辑的教学讲义。</p></article>
+        </div>
+      </section>
+
+      <section class="section workflow-section" id="workflow">
+        <div class="section-heading section-heading--left"><span>TEACHING WORKFLOW</span><h2>从原始材料到可打印内容</h2></div>
+        <div class="workflow">
+          <div><b>01</b><span>智能录入</span><small>图片 · PDF · 文本</small></div><i>→</i>
+          <div><b>02</b><span>知识关联</span><small>章节 · 知识点 · 考点</small></div><i>→</i>
+          <div><b>03</b><span>AI 增强</span><small>解析 · 点睛 · 变式</small></div><i>→</i>
+          <div><b>04</b><span>内容生产</span><small>试卷 · 讲义 · 分析</small></div><i>→</i>
+          <div><b>05</b><span>专业输出</span><small>PDF · TeX · ZIP</small></div>
+        </div>
+      </section>
+
+      <section class="local-section" id="local-first">
+        <div class="local-copy"><span>LOCAL FIRST</span><h2>数据留在本机，能力由你掌控</h2><p>题库、图片、AI 配置和对话记录默认保存在本地。基础管理、筛选、组卷与导出不依赖云端服务；需要 AI 时，可自由连接多套云端兼容接口或本地模型。</p><ul><li>SQLite 本地数据空间与备份迁移</li><li>API 密钥不进入普通题库导出</li><li>MathCraft、PaddleOCR-VL 与 AI 视觉多级回退</li><li>XeLaTeX 本地编译专业试卷和讲义</li></ul></div>
+        <div class="privacy-orbit"><div class="orbit orbit--one"></div><div class="orbit orbit--two"></div><div class="shield">墨<small>LOCAL</small></div><span class="satellite satellite--one">SQLite</span><span class="satellite satellite--two">OCR</span><span class="satellite satellite--three">LaTeX</span></div>
+      </section>
+    </main>
+
+    <footer><div class="brand footer-brand"><span class="brand-mark">墨</span><span><b>墨衡</b><small>INTELLIGENT BANK</small></span></div><p>本页面为产品公开展示页。完整系统在 Windows 本地环境运行。</p><span>v1.0.0 · 2026</span></footer>
+    <script src="./app.js"></script>
+  </body>
+</html>
